@@ -1,0 +1,408 @@
+/*---------Other---------*/
+
+html{
+    background-color: rgb(250, 238, 221);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(31px, 5.5vw, 55px);
+    margin: 10px;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(25px, 2.5vw, 35px);
+    text-align: center;
+    margin: 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.podnadpis{
+    font-style: oblique;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    margin-top: -10px;
+}
+
+.crtf{
+    width: 120px;
+    box-shadow: 5px 8px 10px rgb(0,0,0, 0.4);
+}
+
+
+
+.crtf:hover{
+    width: 69vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 20px rgb(0,0,0, 0.4);
+}
+
+
+
+
+
+/*---------Body---------*/
+
+.certifikat{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    "top"
+    "main";
+    gap: 10px;
+    padding: 10px;
+    margin: auto;
+    height: auto;
+    max-width: 700px;
+    background-color: rgb(232, 203, 168);
+    border: none;
+    border-radius: 30px;
+
+}
+
+
+
+/*---------Main---------*/
+
+.main{
+    grid-area: main;
+    
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: 
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six"
+    "seven";
+    gap: 20px;
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 30px;
+}
+
+/*---------ONE---------*/
+
+.one{
+    grid-area: one;
+    border-bottom: 1px solid rgb(224, 208, 187);
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas: 
+    "title right"
+    "left right";
+    gap: 15px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.title{
+    grid-area: title;
+}
+
+.right{
+    grid-area: right;
+    display: grid;
+    place-items: center;
+}
+
+.left{
+    grid-area: left;
+}
+
+
+/*---------TWO---------*/
+
+
+.two{
+    grid-area: two;
+    border-bottom: 1px solid rgb(224, 208, 187);
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas: 
+    "left2 title2"
+    "left2 right2";
+    gap: 15px;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.title2{
+    grid-area: title2;
+}
+
+.right2{
+    grid-area: right2;
+    
+}
+
+.left2{
+    grid-area: left2;
+    display: grid;
+    place-items: center;
+}
+
+
+/*---------THREE---------*/
+
+
+.three{
+    grid-area: three;
+    border-bottom: 1px solid rgb(224, 208, 187);
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas: 
+    "title3 right3"
+    "left3 right3";
+    gap: 15px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+
+.title3{
+    grid-area: title3;
+}
+
+.right3{
+    grid-area: right3;
+    display: grid;
+    place-items: center;
+}
+
+.left3{
+    grid-area: left3;
+}
+
+
+
+/*---------FOUR---------*/
+
+
+
+.four{
+    grid-area: four;
+    border-bottom: 1px solid rgb(224, 208, 187);
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas: 
+    "left4 title4"
+    "left4 right4";
+    gap: 15px;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.title4{
+    grid-area: title4;
+}
+
+.right4{
+    grid-area: right4;
+    
+}
+
+.left4{
+    grid-area: left4;
+    display: grid;
+    place-items: center;
+}
+
+
+
+/*---------FIVE---------*/
+
+
+
+.five{
+    grid-area: five;
+    border-bottom: 1px solid rgb(224, 208, 187);
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas: 
+    "title5 right5"
+    "left5 right5";
+    gap: 15px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.title5{
+    grid-area: title5;
+}
+
+.right5{
+    grid-area: right5;
+    display: grid;
+    place-items: center;
+}
+
+.left5{
+    grid-area: left5;
+}
+
+
+
+
+
+/*---------SIX---------*/
+
+.six{
+    grid-area: six;
+    border-bottom: 1px solid rgb(224, 208, 187);
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas: 
+    "left6 title6"
+    "left6 right6";
+    gap: 15px;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.title6{
+    grid-area: title6;
+}
+
+.right6{
+    grid-area: right6;
+    
+}
+
+.left6{
+    grid-area: left6;
+    display: grid;
+    place-items: center;
+}
+
+
+/*---------SEVEN---------*/
+
+
+
+.seven{
+    grid-area: seven;
+    
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas: 
+    "title7 right7"
+    "left7 right7";
+    gap: 15px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.title7{
+    grid-area: title7;
+}
+
+.right7{
+    grid-area: right7;
+    display: grid;
+    place-items: center;
+}
+
+.left7{
+    grid-area: left7;
+}
+
+
+
+
+
+
+/*---------Top---------*/
+
+.top{
+    grid-area: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+}
+
+.nadpis{
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+.menu{
+    position: absolute;
+    left: 20px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    
+}
+
+.dropdown{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    background-color: rgb(179, 179, 179);
+    padding: 10px;
+    border: 1px solid rgb(140, 140, 140);
+    
+}
+
+.option{
+    border-bottom: 1px solid rgb(140, 140, 140);
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+    text-align: left;
+    width: 80px;
+}
+
+.last{
+    border: none;
+}
+
+
+.menu:hover .dropdown{
+    display: flex;
+    
+}
+
+.hamburger{
+    width: 45px;
+    background-color: rgb(206, 206, 206);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.hamburger:hover{
+    background-color: rgb(179, 179, 179);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}

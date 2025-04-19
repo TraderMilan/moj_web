@@ -1,0 +1,67 @@
+html{
+    background-color: rgb(235, 218, 200);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    text-align: center;
+    font-size: clamp(28px, 4.4vw, 38px);
+}
+h2{
+    text-align: left;
+    font-size: clamp(15px, 2.7vw, 24px);
+}
+
+
+
+.projectTemplate{
+    display: grid;
+    grid-template-columns: clamp(70px, 20%, 120px) 1fr;
+    grid-template-rows: clamp(60px, 10vw, 90px) auto;
+    grid-template-areas: 
+    "goBack top"
+    "bottom bottom";
+    border: 2px solid rgb(202, 185, 164);
+    width: 80%;
+    max-width: 570px;
+    height: auto;
+    margin: auto;
+    
+    padding: 10px 40px;
+    
+    gap: 15px;
+    box-shadow:20px 20px 40px rgba(0, 0, 0, 0.4);
+    font-size: clamp(11px, 1.9vw, 14px);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    white-space: normal;
+    background-color: rgba(216, 201, 181, 0.85);
+}
+
+.goBack{
+    grid-area: goBack;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn{
+    width: 60%;
+    height: 80%;
+}
+
+.top{
+    grid-area: top;
+    padding-right: 5vw;
+}
+
+.bottom{
+    border-top: 2px solid rgb(201, 183, 160);
+    grid-area: bottom;
+}
+
+img{
+    height: clamp(35px, 6.2vw, 55px);
+}

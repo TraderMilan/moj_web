@@ -1,0 +1,253 @@
+/*--------Other--------*/
+
+
+html{
+    background-color: rgb(250, 238, 221);
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(20px, 5vw, 50px);
+    
+
+}
+
+h4{
+    font-size: clamp(10px, 2.1vw, 18px);
+    margin-bottom: 0px;
+}
+
+h2{
+    font-size: clamp(13px, 3vw, 24px);
+    margin-bottom: 0px;
+}
+
+ul{
+    margin-left: -20px;
+}
+
+button{
+    border: none;
+    background-color: antiquewhite;
+    padding-left: 0px;
+}
+
+.desc{
+    font-size: clamp(8px, 1.7vw, 15px);
+    font-weight: bold;
+    overflow-wrap: break-word;
+    background-color: blanchedalmond;
+}
+
+.desc:hover{
+    font-size: clamp(9px, 1.8vw, 16px);
+}
+
+
+
+/*--------Main--------*/
+
+.page{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: clamp(50px, 10%, 90px) 0.8fr;
+    grid-template-rows: clamp(50px, 9vw, 90px) auto;
+    grid-template-areas:
+    "home   title"
+    "telo   telo";
+    max-width: 700px;
+    height: auto;
+    gap: 10px;
+    margin: auto;
+    padding: 10px 25px;
+    font-size: clamp(8px, 1.7vw, 15px);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    white-space: normal;
+    background-color: rgb(232, 203, 168);
+    border: none;
+    border-radius: 20px;
+    min-width: 600px;
+    
+}
+
+/*--|--------Telo--------*/
+
+.telo{
+    grid-area: telo;
+    border: 2px solid rgb(224, 206, 183);
+    padding: 0px 40px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "projekt1"
+    "projekt2"
+    "projekt3";
+    gap: 0px;
+    
+    height: 100%;
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 20px;
+    margin-left: -70px;
+    margin-right: -70px;
+
+}
+
+.projekt3{
+    grid-area: projekt3;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "nadpis3 nadpis3"
+    "popis3  technologie3"
+    "odkaz3 odkaz3";
+}
+
+.nadpis3{
+    grid-area: nadpis3;
+}
+
+.popis3{
+    grid-area: popis3;
+}
+
+.technologie3{
+    grid-area: technologie3;
+}
+
+.odkaz3{
+    grid-area: odkaz3;
+    padding-bottom: 20px;
+}
+
+
+
+.projekt2{
+    grid-area: projekt2;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "nadpis2 nadpis2"
+    "popis2  technologie2"
+    "odkaz2 odkaz2";
+    gap: 0px 20px;
+    border-bottom: 2px solid rgb(225, 208, 186);
+}
+
+.nadpis2{
+    grid-area: nadpis2;
+}
+
+.popis2{
+    grid-area: popis2;
+}
+
+.technologie2{
+    grid-area: technologie2;
+}
+
+.odkaz2{
+    grid-area: odkaz2;
+}
+
+
+
+.projekt1{
+    grid-area: projekt1;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "nadpis1 nadpis1"
+    "popis1  technologie1"
+    "odkaz1 odkaz1";
+    gap: 0px 20px;
+    border-bottom: 2px solid rgb(225, 208, 186);
+}
+
+
+
+
+.nadpis1{
+    grid-area: nadpis1;
+}
+
+.popis1{
+    grid-area: popis1;
+}
+
+.technologie1{
+    grid-area: technologie1;
+}
+
+.odkaz1{
+    grid-area: odkaz1;
+    
+}
+
+
+
+
+/*--|--------HomePage--------*/
+
+.home{
+    grid-area: home;
+    border: 2px solid rgb(224, 206, 183);
+    margin-left: -70px;
+
+}
+
+.homePage{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 1%;
+    
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    
+    
+}
+.homePage img{
+    width: clamp(30px, 7vw, 70px);
+    display: grid;
+    place-items: center;
+    justify-content: center;
+
+    
+}
+
+.homePage:hover{
+    background-color: rgb(231, 220, 206)
+}
+
+
+
+/*--|--------Nadpis--------*/
+
+.title{
+    grid-area: title;
+    border: 2px solid rgb(224, 206, 183);
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    margin-right: -70px;
+   
+}
+

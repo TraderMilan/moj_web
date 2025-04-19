@@ -1,0 +1,438 @@
+/*----------main----------*/
+/*TODO - do menu pridaj aj certifikáty*/
+
+
+
+.page{
+    
+    margin: auto;
+
+    padding: 10px 0px;
+    padding-bottom: 37px;
+    display: grid;
+    
+    grid-template-columns: 33% 0.9fr;
+    grid-template-rows: clamp(70px, 13vw, 120px) 88%;
+    grid-template-areas: 
+    
+    "aside    header"
+    "aside     main";
+    gap: 10px;
+    height: auto;
+    width: 80vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(10px, 1.3vw, 13px);
+    max-width: 780px;
+    min-width: 600px;
+    height: auto;
+    background-color: rgb(232, 203, 168);
+    border: none;
+    border-radius: 30px;
+    justify-content: center;
+    
+
+    
+
+
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(232, 211, 184);
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    margin-right: -15px;
+    
+    
+}
+
+.top{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "nav"
+    "name";
+    gap: 10px;
+    
+}    
+
+.nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 2px;
+    gap: 5px;
+    
+    
+    
+    
+    
+}
+
+.option{
+    background-color: rgb(218, 193, 162);
+    border: 1px solid rgb(199, 175, 144);
+    padding: auto;
+    
+    color: rgb(95, 95, 95);
+
+    padding: 0.6vw 1vw;
+    border: 1px solid rgb(195, 178, 158);
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(10px, 2vw, 16px);
+
+    
+}
+
+.option:hover{
+    
+    background-color: rgb(179, 156, 128);;
+}
+
+.name{
+    grid-area: name;
+    text-align: center;
+    font-size: clamp(20px, 4.2vw, 38px);
+    margin: auto;
+}
+
+
+
+aside{
+    grid-area: aside;
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    margin-left: -15px;
+    
+}
+
+main{
+    grid-area: main;
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    margin-right: -15px;
+}
+
+
+
+
+
+/*----------heart----------*/
+
+
+.heart{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "skusenosti"
+    "vzdelanie"
+    "znalosti";
+    height: auto;
+    
+}
+
+.znalosti{
+    grid-area: znalosti;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: auto 50%;
+    grid-template-rows: auto auto auto auto auto auto ;
+    grid-template-areas: 
+    "skill  level"
+    "skill2  level2"
+    "skill3  level3"
+    "skill4  level4"
+    "skill5  level5"
+    "skill6  level6";
+    justify-content: space-between;
+    text-align: left;
+    gap: 15px;
+}
+
+.skill{
+    grid-area: skill;
+    font-weight: bold;
+    padding-left: 30px;
+}
+.skill2{
+    grid-area: skill2;
+    font-weight: bold;
+    padding-left: 30px;
+}
+.skill3{
+    grid-area: skill3;
+    font-weight: bold;
+    padding-left: 30px;
+}
+.skill4{
+    grid-area: skill4;
+    font-weight: bold;
+    padding-left: 30px;
+}
+.skill5{
+    grid-area: skill5;
+    font-weight: bold;
+    padding-left: 30px;
+}
+.skill6{
+    grid-area: skill6;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+
+.skusenosti{
+    grid-area: skusenosti;
+    margin-top: -10px;
+}
+
+.work{
+    display: grid;
+    
+    border-bottom: 1px solid rgb(232, 211, 184);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "date   pozicia"
+    "date   firma"
+    "date2   pozicia2"
+    "date2   firma2";
+    gap: 2%;
+    text-align: left;
+   
+    
+}
+
+.date{
+    grid-area: date;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.firma{
+    grid-area: firma;
+    padding-bottom: 20px;
+}
+
+.pozicia{
+    grid-area: pozicia;
+    font-weight: bold;
+}
+
+.date2{
+    grid-area: date2;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.firma2{
+    grid-area: firma2;
+    padding-bottom: 20px;
+}
+
+.pozicia2{
+    grid-area: pozicia2;
+    font-weight: bold;
+}
+
+.vzdelanie{
+    grid-area: vzdelanie;
+}
+
+.skoly{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: 
+    "schoolDate school"
+    "schoolDate zameranie"
+    "schoolDate miesto"
+    "schoolDate2 school2"
+    "schoolDate2 zameranie2"
+    "schoolDate2 miesto2";
+    justify-content: space-between;
+    text-align: left;
+    gap: 4px;
+    border-bottom: 1px solid rgb(232, 211, 184);
+    
+
+}
+
+.schoolDate{
+    grid-area: schoolDate;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.school{
+    grid-area: school;
+    font-weight: bold;
+}
+
+.zameranie{
+    grid-area: zameranie;
+}
+
+.miesto{
+    grid-area: miesto;
+    padding-bottom: 20px;
+}
+.schoolDate2{
+    grid-area: schoolDate2;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.school2{
+    grid-area: school2;
+    font-weight: bold;
+}
+
+.zameranie2{
+    grid-area: zameranie2;
+}
+
+.miesto2{
+    grid-area: miesto2;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+/*----------aside----------*/
+
+
+.sidebar{
+    display: grid;
+    
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:    "image"
+                            "kontakt"
+                            "oMne"
+                            "jazyk"
+                            "vodicak"
+                            "konicky";
+    text-align: center;
+    height: auto;
+    justify-content: center;
+    margin: 2%;
+    
+}
+
+.image{
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.sidebar img{
+    width: 50%;
+    border: 1px solid;
+    border-radius: 50%;
+    
+}
+
+.kontakt{
+    grid-area: kontakt;
+    border-bottom: 1px solid rgb(232, 211, 184);
+    text-align: left;
+
+}
+
+.oMne{
+    grid-area: oMne;
+    text-align: left;
+    border-bottom: 1px solid rgb(232, 211, 184);
+    
+    
+}
+
+.jazyk{
+    grid-area: jazyk;    
+    border-bottom: 1px solid rgb(232, 211, 184);
+    text-align: left;
+}
+
+.vodicak{
+    grid-area: vodicak;
+    text-align: left;
+    border-bottom: 1px solid rgb(232, 211, 184);
+    
+}
+
+.konicky{
+    grid-area: konicky;
+    text-align: left;
+}
+
+
+
+
+
+
+/*----------other----------*/
+
+h3,h2,h1{
+    text-align: center;
+    margin: 5%;
+    
+    
+}
+
+h3{
+    font-size: clamp(10px, 2.2vw, 19px);
+}
+h2{
+    font-size: clamp(13px, 2.8vw, 24px);
+    
+}
+
+
+ul{
+    padding-left: 10px;
+    text-align: left;
+}
+
+html{
+    background-color: rgb(250, 238, 221);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
