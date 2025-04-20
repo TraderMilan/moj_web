@@ -251,3 +251,38 @@ button{
    
 }
 
+
+@media(max-width: 500px){
+    .page{
+        width: 80vw;
+        max-width: 100%;
+        min-width: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "home"
+        "title"
+        "telo"
+        ;
+        gap: 10px;
+    }
+
+    .home{
+        margin: 0px -10px;
+    }
+
+    .title{
+        margin: 0px -10px;
+    }
+
+    .telo{
+        margin: 0px -10px;
+    }
+
+    h1{
+        font-size: 6.1vw;
+    
+        margin: 10px;
+    }
+}
+

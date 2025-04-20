@@ -5,7 +5,7 @@ html{
 
 h1{
     text-align: center;
-    font-size: clamp(28px, 4.4vw, 38px);
+    font-size: clamp(36px, 6vw, 50px);
 }
 h2{
     text-align: left;
@@ -40,6 +40,7 @@ h2{
 }
 
 .goBack{
+    
     grid-area: goBack;
     display: flex;
     justify-content: center;
@@ -50,11 +51,20 @@ h2{
 .btn{
     width: 60%;
     height: 80%;
+    background: none;
+    border: none;
+}
+
+.btn:hover{
+    cursor: pointer;
 }
 
 .top{
     grid-area: top;
     padding-right: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bottom{
@@ -64,4 +74,35 @@ h2{
 
 img{
     height: clamp(35px, 6.2vw, 55px);
+}
+
+@media(max-width: 500px){
+    .projectTemplate{
+        width: 80vw;
+        min-width: 220px;
+        max-width: 100%;
+        font-size: 11px;
+        grid-template-columns: clamp(50px, 20%, 100px) 0.8fr;
+        grid-template-rows: clamp(60px, 10vw, 90px) auto;
+        grid-template-areas: 
+        "goBack top"
+        "bottom bottom";
+        padding: 10px 0px 10px 20px;
+        
+    }
+
+  li{
+    margin-left: -10px;
+  }
+
+  h1{
+    font-size: clamp(22px, 4vw, 38px);
+  }
+
+  .btn{
+    
+    background: none;
+    border: none;
+}
+
 }

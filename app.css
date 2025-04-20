@@ -426,8 +426,39 @@ html{
 
 
 
+/*----------responzivity----------*/
 
+@media(max-width: 500px){
+    .page{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "header"
+        "aside"
+        "main";
+        width: 80vw;
+        min-width: auto;
+        max-width: 100%;
+        padding: 10px;
+    }
 
+    header{
+        margin-right: 0px;
+    }
+
+    aside{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    main{
+        margin-right: 0px;
+    }
+
+    .sidebar img{
+        width: 30%;
+    }
+}
 
 
 

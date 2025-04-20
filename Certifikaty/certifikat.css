@@ -406,3 +406,186 @@ h2{
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
+
+
+
+@media(max-width: 500px){
+    .certifikat{
+        width: 80vw;
+        max-width: 100%;
+        min-width: auto;
+        font-size: 11px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "top"
+        "main"
+        ;
+    }
+
+    
+
+    .hamburger{
+        width: clamp(11px, 4.5vw, 30px);
+        border-radius: 5px;
+        margin-left: -7px;
+    }
+
+    h1{
+        font-size: 5.7vw;
+    }
+    h2{
+        font-size: 5vw;
+    }
+
+    .crtf{
+        width: 100px;
+        box-shadow: 5px 8px 10px rgb(0,0,0, 0.4);
+    }
+    
+    
+    
+    .crtf:hover{
+        width: 300px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 20px 20px 20px rgb(0,0,0, 0.4);
+    }
+
+    /*---------ONE---------*/
+
+.one{
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "title" 
+    "left"
+    "right"
+    ;
+    gap: 15px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+
+/*---------TWO---------*/
+
+
+.two{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "title2" 
+    "right2"
+    "left2"
+    ;
+    gap: 15px;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+
+
+/*---------THREE---------*/
+
+
+.three{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "title3" 
+    "left3"
+    "right3"
+    ;
+    gap: 15px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+
+
+/*---------FOUR---------*/
+
+
+
+.four{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "title4" 
+    "right4"
+    "left4"
+    ;
+    gap: 15px;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+
+/*---------FIVE---------*/
+
+
+
+.five{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "title5" 
+    "left5"
+    "right5"
+    ;
+    gap: 15px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+
+
+
+/*---------SIX---------*/
+
+.six{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "title6" 
+    "right6"
+    "left6"
+    ;
+    gap: 15px;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+
+
+/*---------SEVEN---------*/
+
+
+
+.seven{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "title7" 
+    "left7"
+    "right7"
+    ;
+    gap: 15px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+
+
+
+}
+
+
