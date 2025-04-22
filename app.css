@@ -8,11 +8,10 @@
     margin: auto;
 
     padding: 10px 0px;
-    padding-bottom: 37px;
     display: grid;
     
     grid-template-columns: 33% 0.9fr;
-    grid-template-rows: clamp(70px, 13vw, 120px) 88%;
+    grid-template-rows: clamp(70px, 13vw, 120px) auto;
     grid-template-areas: 
     
     "aside    header"
@@ -128,6 +127,7 @@ main{
     border-radius: 30px;
     position: relative;
     margin-right: -15px;
+    
 }
 
 
@@ -339,6 +339,7 @@ main{
     height: auto;
     justify-content: center;
     margin: 2%;
+
     
 }
 
@@ -361,6 +362,10 @@ main{
     grid-area: kontakt;
     border-bottom: 1px solid rgb(232, 211, 184);
     text-align: left;
+    overflow-wrap: break-word;   
+    word-break: break-all;       
+    text-wrap: wrap; 
+    
 
 }
 
@@ -428,7 +433,7 @@ html{
 
 /*----------responzivity----------*/
 
-@media(max-width: 500px){
+@media(max-width: 600px){
     .page{
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
