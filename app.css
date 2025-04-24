@@ -362,9 +362,8 @@ main{
     grid-area: kontakt;
     border-bottom: 1px solid rgb(232, 211, 184);
     text-align: left;
-    overflow-wrap: break-word;   
-    word-break: break-all;       
-    text-wrap: wrap; 
+    word-break: break-word;
+    overflow-wrap: anywhere;
     
 
 }
