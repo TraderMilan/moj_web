@@ -1,5 +1,5 @@
 /*----------main----------*/
-/*TODO - do menu pridaj aj certifikáty*/
+
 
 
 
@@ -77,12 +77,8 @@ header{
 .option{
     background-color: rgb(218, 193, 162);
     border: 1px solid rgb(199, 175, 144);
-    padding: auto;
-    
     color: rgb(95, 95, 95);
-
     padding: 0.6vw 1vw;
-    border: 1px solid rgb(195, 178, 158);
     border-radius: 3px;
     font-family: 'Courier New', Courier, monospace;
     font-size: clamp(10px, 2vw, 16px);
@@ -90,10 +86,34 @@ header{
     
 }
 
-.option:hover{
-    
-    background-color: rgb(179, 156, 128);;
+
+@keyframes anim{
+    0%{
+        background-color: rgb(218, 193, 162);
+    }
+    50%{
+        background-color: rgb(201, 177, 147);
+        transform: scale(1.04);
+    }
+    100%{
+        background-color: rgb(218, 193, 162);
+        transform: scale(1);
+    }
+
 }
+
+.option{
+    animation: anim 1.5s infinite;
+}
+.option:hover{
+    animation: none;
+    background-color: rgb(179, 156, 128);
+    cursor: pointer;
+}
+
+
+
+
 
 .name{
     grid-area: name;

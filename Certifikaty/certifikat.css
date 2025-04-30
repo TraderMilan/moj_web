@@ -28,14 +28,23 @@ h2{
     margin-top: -10px;
 }
 
+@keyframes focus{
+    50%{
+        transform: scale(1.03);
+    }
+}
+
 .crtf{
     width: 120px;
     box-shadow: 5px 8px 10px rgb(0,0,0, 0.4);
+    animation: focus 2s infinite;
 }
 
 
 
 .crtf:hover{
+    z-index: 1;
+    animation: none;
     width: 69vh;
     position: fixed;
     top: 50%;
@@ -437,6 +446,7 @@ h2{
     h2{
         font-size: 5vw;
     }
+    
 
     .crtf{
         width: 100px;
